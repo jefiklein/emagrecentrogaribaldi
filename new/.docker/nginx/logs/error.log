@@ -1,0 +1,2 @@
+2023/01/07 12:53:45 [error] 7#7: *1 directory index of "/var/www/" is forbidden, client: 172.22.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8888"
+2023/01/07 12:53:45 [error] 7#7: *1 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 172.22.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/"

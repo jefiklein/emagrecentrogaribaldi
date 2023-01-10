@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  nginx:
+    build: nginx
+    container_name: app-landing-nginx
+    restart: always
+    tty: true
+    ports:
+      - "8888:80"
+    volumes:
+      - ../:/var/www
+      - ./nginx/logs:/var/log/nginx
+    networks:
+      - landing-page-network
+
+networks:
+  landing-page-network:
+    driver: bridge

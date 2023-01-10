@@ -1,0 +1,40 @@
+.section-content .video-container {
+    /*margin: 25px 10px auto;*/
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 550px;
+}
+
+.iframe-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+@media screen and (min-width: 740px) {
+    .video-container {
+        padding-bottom: 400px;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-height: 600px) {
+
+}
