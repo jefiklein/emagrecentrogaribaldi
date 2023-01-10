@@ -398,7 +398,55 @@ section {
 }
 
 .section-localization .section-container .section-header.section-localization-title {
-    margin-bottom: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+}
+
+.section-localization .you-doubt-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 250px;
+}
+
+.accordion-item {
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+}
+
+.accordion-body {
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+}
+
+.accordion-body::after {
+    color: var(--secondary-color);
+}
+
+.accordion-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.accordion-button::after {
+    width: 4.25rem;
+    height: 3.25rem;
+    background-size: 4rem;
+    filter: invert(98%) sepia(67%) saturate(0%) hue-rotate(338deg) brightness(100%) contrast(103%);
+}
+
+.accordion-button:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 .25rem rgba(250, 250, 250, 0.7);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--primary-color);
+    color: rgba(250, 250, 250, 0.7);
 }
 
 .footer-copyright {
