@@ -54,3 +54,9 @@ p {
     line-height: 1;
     font-weight: bold;
 }
+
+@media screen and (max-height: 800px) {
+    .section-title {
+        max-width: unset;
+    }
+}
