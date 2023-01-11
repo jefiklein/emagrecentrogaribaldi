@@ -196,7 +196,7 @@ section {
 
 .phases-cards-title span {
     padding: 0px 5px 0px 5px;
-    border: 1px solid white;
+    border: 1px solid var(--secondary-color);
 }
 
 .phases-cards-body {
@@ -239,7 +239,7 @@ section {
 
 .image-overlay:hover {
     background-color: rgba(0, 0, 0, 0.3);
-    color: white;
+    color: var(--secondary-color);
 }
 
 .steps {
@@ -446,12 +446,17 @@ section {
     filter: invert(98%) sepia(67%) saturate(0%) hue-rotate(338deg) brightness(100%) contrast(103%);
 }
 
+.accordion-button:hover::after {
+    filter: invert(82%) sepia(9%) saturate(10%) hue-rotate(327deg) brightness(99%) contrast(91%);
+}
+
 .accordion-button:focus {
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 .25rem rgba(250, 250, 250, 0.7);
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed),
+.accordion-button:hover {
     background-color: var(--primary-color);
     color: rgba(250, 250, 250, 0.7);
 }

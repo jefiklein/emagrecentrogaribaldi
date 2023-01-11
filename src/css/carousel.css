@@ -72,4 +72,8 @@
         height: 350px;
         width: 212px;
     }
+    .slider::before, .slider::after {
+        background: linear-gradient(to right, #000000 0%, rgba(255, 255, 255, 0) 25%);
+        height: 400px;
+    }
 }
