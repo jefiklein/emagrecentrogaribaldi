@@ -18,7 +18,7 @@
 }
 
 .btn-contact {
-    color: #FFF;
+    color: var(--secondary-color);
     transition: all 0.5s;
     position: relative;
 }
