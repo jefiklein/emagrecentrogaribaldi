@@ -18,6 +18,37 @@ main {
     overflow: hidden;
 }
 
+.floating-wp-icon {
+    position: fixed;
+    bottom: 3.5rem;
+    right: 3.5rem;
+    z-index: 3;
+    width: 80px;
+    height: 80px;
+}
+
+.floating-wp-icon a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.floating-wp-icon img {
+    width: 60px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.floating-wp-icon img:hover {
+    width: 80px;
+    transition: all 0.3s;
+    filter: brightness(1.3);
+}
+
+
 section {
 }
 
