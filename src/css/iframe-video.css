@@ -4,7 +4,10 @@
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 450px;
+    max-width: 650px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .video-container iframe {
@@ -16,14 +19,23 @@
 }
 
 .iframe-video {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
     width: 100%;
 }
 
-@media screen and (min-width: 740px) {
+@media screen and (min-height: 650px) {
     .video-container {
-        padding-bottom: 400px;
+        padding-bottom: 370px;
     }
+}
+
+@media screen and (min-height: 946px) {
+    .video-container {
+        padding-bottom: 480px;
+    }
+}
+
+@media screen and (min-width: 740px) {
 
     .video-container iframe {
         position: absolute;
