@@ -464,11 +464,22 @@ p.phases-cards-body {
     margin-bottom: 0px;
 }
 
+.social-network-icons {
+    position: relative;
+}
+
+.social-icons-centered {
+    margin: 0;
+    position: absolute;
+    min-width: 525px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 .section-social-networks {
     position: relative;
-    left: 50%;
     bottom: 0px;
-    transform: translateX(-200%);
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -587,9 +598,11 @@ p.phases-cards-body {
         height: 2.25rem;
         background-size: 3rem;
     }
-    .social-network-icons .section-social-networks {
+    .social-icons-centered {
         left: unset;
         transform: unset;
+    }
+    .social-network-icons .section-social-networks {
         width: 105px;
     }
 }
