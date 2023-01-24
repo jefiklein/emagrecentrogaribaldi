@@ -19,7 +19,7 @@
 .slider {
     background: transparent;
     /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);*/
-    height: 600px;
+    height: 550px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -29,7 +29,7 @@
 .slider::before, .slider::after {
     background: linear-gradient(to right, var(--primary-gradient-color) 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
-    height: 600px;
+    height: 550px;
     position: absolute;
     width: 200px;
     z-index: 2;

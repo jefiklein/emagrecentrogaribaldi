@@ -347,6 +347,12 @@ p.phases-cards-body {
     padding: 10px;
 }
 
+.steps-section-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .steps-section-thumbnail {
     height: 240px;
     object-fit: cover;
@@ -462,7 +468,7 @@ p.phases-cards-body {
     position: relative;
     left: 50%;
     bottom: 0px;
-    transform: translateX(-150%);
+    transform: translateX(-200%);
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -489,6 +495,10 @@ p.phases-cards-body {
 
 .section-social-networks.facebook {
     background: url(../../public/images/app/icons/facebook.svg) no-repeat scroll center center;
+}
+
+.section-social-networks.youtube {
+    background: url(../../public/images/app/icons/youtube.svg) no-repeat scroll center center;
 }
 
 .section-localization .section-container .section-header.section-localization-title {
@@ -549,7 +559,7 @@ p.phases-cards-body {
 }
 
 .footer-copyright {
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .footer-copyright a {
