@@ -47,12 +47,41 @@ function openWindowInfo(infowindow, map, marker) {
     description.textContent = 'Centro Especializado em Emagrecimento, Saúde e Estética';
     description.classList.add("map-info-description");
     contentRigth.appendChild(description);
+
+
+    const contentAddress = document.createElement("div");
+    contentAddress.classList.add("row");
+
+    const contentAddr1 = document.createElement("div");
+    contentAddr1.classList.add("col-md-6");
+    contentAddr1.classList.add("col-sm-12");
     const address = document.createElement("a");
     address.href = 'https://goo.gl/maps/ZQYHoSjb4AyC12TP8';
     address.target = '_blank';
-    address.textContent = 'R. Valter Jobim, 523 - Sala 06 - Centro, Carlos Barbosa - RS';
+    address.textContent = "R. Valter Jobim, 523 - Sala 06";
     address.classList.add("map-info-address");
-    contentRigth.appendChild(address);
+    contentAddr1.appendChild(address);
+    contentAddress.appendChild(contentAddr1);
+    const contentAddr2 = document.createElement("div");
+    contentAddr2.classList.add("col-md-6");
+    contentAddr2.classList.add("col-sm-12");
+    const address2 = document.createElement("a");
+    address2.href = 'https://goo.gl/maps/ZQYHoSjb4AyC12TP8';
+    address2.target = '_blank';
+    address2.textContent = "Centro - Carlos Barbosa - RS";
+    address2.classList.add("map-info-address");
+    contentAddr2.appendChild(address2);
+    contentAddress.appendChild(contentAddr2);
+
+    contentRigth.appendChild(contentAddress);
+
+    const phone = document.createElement("a");
+    phone.href = 'tel:54981630905';
+    phone.target = '_blank';
+    phone.textContent = "(54) 98163-0905";
+    phone.ariaLabel = "Ligar para (54) 98163-0905";
+    phone.classList.add("map-info-phone");
+    contentRigth.appendChild(phone);
 
     content.appendChild(contentRigth);
 

@@ -412,46 +412,78 @@ p.phases-cards-body {
     position: relative;
     float: right;
     max-width: 400px;
+    height: 150px;
+}
+
+.map-info > * {
+    padding-left: 15px;
+}
+
+.map-info .row {
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.map-info .row div[class^="col-"]{
+    padding-left: unset;
+    padding-right: unset;
 }
 
 .map-info .map-info-title {
     font-weight: bold;
     margin-top: 0px;
-    padding-left: 15px;
 }
 
 .map-info .map-info-description {
     font-weight: normal;
-    padding-left: 15px;
+    padding-bottom: 5px;
 }
 
-.map-info .map-info-address {
+.map-info .map-info-address,
+.map-info .map-info-phone {
     color: #1b7cde;
     font-weight: bold;
     text-decoration: underline;
-    padding-left: 15px;
     cursor: pointer;
+    font-size: 14px;
+}
+
+.map-info .map-info-phone {
+    text-decoration: none;
+    position: absolute;
+    bottom: 0px;
+    font-size: 16px;
+    width: 100%;
+    text-align: right;
 }
 
 @media screen and (max-width: 750px) {
     .map-info {
         width: 200px;
     }
+    .map-info .map-info-description,
+    .map-info .map-info-address {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 545px) {
-    .map-info {
-        width: 100px;
+    .gm-style-iw.gm-style-iw-c {
+        min-width: 350px !important;
     }
 
-    .map-info .map-info-description {
-        display: none;
+    .map-info .map-info-description,
+    .map-info .map-info-address {
+        font-size: 12px;
     }
     .map-info-img img {
-        width: 120px;
+        width: 125px;
     }
     .steps.container-custom .steps-content-width h1 {
         font-size: 2rem;
+    }
+    .map-info > * {
+        padding-left: 10px;
     }
 }
 
