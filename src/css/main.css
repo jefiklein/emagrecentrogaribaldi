@@ -100,7 +100,8 @@ p {
 section {
 }
 
-.section-gradient::after {
+.section-gradient::after,
+.second-section::before {
     content: " ";
     position: absolute;
     top: 0;
@@ -673,6 +674,10 @@ p.phases-cards-body {
     .social-network-icons .section-social-networks {
         width: 95px;
     }
+    .section-gradient::after,
+    .second-section::before {
+        bottom: -60px;
+    }
 }
 
 @media screen and (min-width: 601px) {
@@ -687,8 +692,26 @@ p.phases-cards-body {
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .phases-options .phases .phases-cards-title {
+        font-size: 1.8rem;
+        top: 10rem;
+    }
+    .phases-options .phases .phases-cards-body {
+        font-size: clamp(2rem, 1.3vw, 2.1rem);
+        top: 16rem;
+    }
 }
 
+@media screen and (min-width: 1000px) {
+    .phases-options .phases .phases-cards-title {
+        font-size: 2.5rem;
+        top: 14rem;
+    }
+    .phases-options .phases .phases-cards-body {
+        font-size: clamp(2.4rem, 1.5vw, 2.3rem);
+        top: 23rem;
+    }
+}
 
 @media (min-width: 1400px) {
     .section-slider.container-xxl {
