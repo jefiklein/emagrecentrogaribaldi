@@ -448,13 +448,38 @@ p.phases-cards-body {
     font-size: 14px;
 }
 
+/*.map-info .row div[class^="col-"]:first-child:hover + div[class^="col-"]:last-child {
+    filter: brightness(1.3);
+}*/
+
+.map-info .row:hover {
+    filter: brightness(1.3);
+}
+
+.map-info .map-info-phone:hover {
+    filter: brightness(1.3);
+}
+
+.map-info .map-info-phone::before {
+    background-image: url("../../public/images/app/icons/phone.svg");
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background-repeat: no-repeat;
+    padding-right: 35px;
+    margin-bottom: -8px;
+    margin-left: -3px;
+}
+
 .map-info .map-info-phone {
     text-decoration: none;
     position: absolute;
     bottom: 0px;
     font-size: 16px;
-    width: 100%;
-    text-align: right;
+    padding-bottom: 5px;
+    padding-right: 10px;
 }
 
 @media screen and (max-width: 750px) {
@@ -476,6 +501,16 @@ p.phases-cards-body {
     .map-info .map-info-address {
         font-size: 12px;
     }
+    .map-info .map-info-phone {
+        font-size: 14px;
+    }
+
+    .map-info .map-info-phone::before {
+        width: 25px;
+        height: 25px;
+        padding-right: 28px;
+    }
+
     .map-info-img img {
         width: 125px;
     }
