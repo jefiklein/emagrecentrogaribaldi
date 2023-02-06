@@ -5,7 +5,11 @@ function initMap() {
         zoom: 14,
         center: position,
         disableDefaultUI: true,
-        zoomControl: true
+        zoomControl: true,
+        zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.SMALL,
+            position: google.maps.ControlPosition.LEFT_BOTTOM
+        }
     });
 
     const markerIconSrc = "https://emagrecentrocarlosbarbosa.com.br/public/images/gmaps/icon/marker.webp";
